@@ -1,0 +1,20 @@
+<p class="title">Posts</p>
+
+{{#each posts}}
+
+<p class="posttitle">{{title.rendered}}</p>
+<p>
+<a href="/posts/{{id}}" class="readmore">Read more</a>
+</p>
+
+{{/each}}
+
+<div class="selectpage">
+
+<a href="/posts?page={{prevPageNumber}}" class="back">Back</a>
+
+{{page}}
+
+<a href="/posts?page={{nextPageNumber}}" class="next">Next</a>
+
+</div>
